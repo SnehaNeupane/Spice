@@ -1,0 +1,109 @@
+body {
+    margin: 0px;
+    font-family: 'arial';
+    margin: 5px 2% 5px 2%;
+    /*padding-left: 5%;
+    padding-right: 5%;*/
+}
+
+.header{
+    padding: 5px;
+    /*Background Color for header*/
+    background-color: #ccefff;
+   /*Text color for header*/
+    /*color: white;*/
+    /*Adding some spacing*/
+    padding: 20px 2%;
+    display: inline-block;
+    width: 96%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.img{
+    max-width: 100%;
+}
+
+.header>h1{
+    float: left;
+    max-width: 80%;
+}
+
+.header>button{
+    width: 6em;
+    float: right;
+    background-color: white;
+    border-radius: 10px;
+    animation-name: example;
+    animation-duration: 3s;
+}
+/*@keyframes example {
+ 0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}*/
+@keyframes example {
+    from {background-color: yellowgreen;}
+    to {background-color: dodgerblue;}
+}
+
+.blue{
+    /*Text color of headings inside of sections*/
+    color: #30ACEC;
+    text-align: center;
+}
+
+.nav{
+    text-align: center;
+    background-color: #D5D8D9;
+    /*General positiong stuff*/
+    line-height: 30px;
+    padding: 5px;
+    display: inline;
+}
+
+@media screen and (min-width: 800px){
+    .nav{
+        width: 20%;
+        float: left;
+        height: 750px;
+    }
+}
+
+/*Overwrites on default underline and color on links*/
+li a{
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px 25px;
+}
+
+a:hover{
+    /*Changes the color when links are hovered over with the mouse*/
+    color: #30ACEC
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/*.main>h1{
+    color: #30ACEC;
+
+}*/
+
+.footer{
+    background-color: #404040;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    clear: both;
+}
