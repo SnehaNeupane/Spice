@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+        <title> Yolo</title>
+        <!--The link to stylesheet (should be in same folder as html page!)-->
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+        <!-- Header for the page with large heading-->
+        <div class="header">
+            <h1>Public Speaking for Success (Dale Carnegie)</h1>
+            <button  id="menu"><img src="images/hamburger.png" type='img/png'></img></button>
+        </div>
+
+        <!-- Navigation menu made from  a list and anchor tag-->
+        <div id="navbar" class="nav">
+          <ul>
+            <li><a href="#">Lesson 1</a></li>
+             <li><a href="#">Lesson 2</a></li>
+              <li><a href="#">Lesson 3</a></li>
+               <li><a href="#">Lesson 4</a></li>
+                <li><a href="#">Lesson 5</a></li>
+                 <li><a href="#">Lesson 6</a></li>
+                  <li><a href="#">Lesson 7</a></li>
+                   <li><a href="#">Lesson 8</a></li>
+         </ul>
+        </div>
+       
+            <!-- Contains the text Contains of the page -->
+            <div class="main">
+                <div class="section">
+                    <h1 class="blue">Introduction to Public Speaking</h1>
+
+                    <p>Training in <span class="bold">Public Speaking</span> is not a matter of externals--primarily; it is not a matter of imitation--fundamentally; it is not a matter of conformity to standards--at all. Public speaking is public utterance, public issuance, of the person himself; therefore the first thing both in time and in importance is that the person should think and feel things that are worthy of being given forth. Unless there be something of value within, no tricks of training can ever make of the talker anything more than a machine--albeit a highly perfected machine--for the delivery of other men's goods. So, self-development is fundamental.</p>
+
+                    <p>In public speech, as in electricity, there is a positive and a negative force. Either you or your audience are going to possess the positive factor. If you assume it you can almost invariably make it yours. If you assume the negative you are sure to be negative. Assuming a virtue or a vice vitalizes it. Summon all your power of self-direction, and remember that though your audience is infinitely more important than you, the truth is more important than both of you, because it is eternal. If your mind falters in its leadership the sword will drop from your hands</p> 
+                </div>
+            <div class="section">
+                <h1 class="blue">The Secret of Good Delivery</h1>
+                <h2>Correct Usage of Words</h2>
+                    <p>Egoism is an excessive love of oneself, selfishness. It is the very opposite of altruism. Self-conceit is a flattering opinion of one's own abilities. Egotism shows self-conceit by wordsand acts. It reveals egoism. One may be self-conceit and have the good taste to hide it; egoistics people parade their importance. Pride is high and sometimes excessive-self-respect. It may be justified or it may be unresonable conren. A pride people may or may not reveal his or her pride. Vanity is a show of pride. The vain person longs to be noticed, and admired and appraised. Vanity literally means empty. It is often applied to pride in such things as dress and personal appearance.</p>
+                <h2>Change Your Pitch</h2>
+                <p>The pitch of your voices in conversation flows up and down the scale from high to low and back again. never resting, but always shifting like the face of the sea. Why? No one knows and no one cares. The effect is pleasing and it is the way of nature. We never had to learn to do this: it came to us as children, unsought and unware. But let us stand up and facec an audience and the chances are our voices will become as dull and flat and monotonous as the alkali deserts of Nevada.</p>
+
+                <h2>In a Nutshell</h2>
+                <p>Every time you speak, you determine the attitude of your hearers towards what you say. If you are lackadaisical, they will be lackadaisical. If you are only mildly concerned, they will be only mildly concerned. If you are enthusiastic, they will be sure to catch something of your spirit. </p>
+            </div>
+
+            <!-- footer for the bottom of the page -->
+            <div class='footer'>
+              <p>Copyright &copy; Sneha Neupane</p>
+            </div>
+        </div>
+
+        <!--<script src = "src.js"></script>-->
+        <script>
+            var navbar = document.getElementById('navbar');
+           
+            document.getElementById('menu').addEventListener('click', menuToggle);
+            
+            function menuToggle(){
+               var navbarDisplay = window.getComputedStyle(navbar).getPropertyValue('display');
+            
+                if (navbarDisplay == 'none'){
+                    displayMenu();
+                }
+                else{
+                    hideMenu();
+                }
+            
+            }
+
+            function displayMenu(){
+                navbar.style.display = 'inline';
+            }
+            function hideMenu(){
+                navbar.style.display='none';
+            }
+            // displayMenu();
+
+
+
+
+        </script> 
+    </body>
+
+</html>
